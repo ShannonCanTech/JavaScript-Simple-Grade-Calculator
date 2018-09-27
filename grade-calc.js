@@ -3,7 +3,7 @@
 // A 90-100, B 80-89, C 70-79, D 60-69, F 0-59
 
 let grade = function (score, totalPoints) {
-    percentage = Math.round(score / totalPoints * 100)
+    percentage = Math.round((score / totalPoints) * 100)
 
     if (percentage >= 90 && percentage <= 100) {
         return `${score}/${totalPoints} - You got an A (${percentage}%)`
